@@ -7,6 +7,17 @@ angular.module('boardApp', [])
 			stories = stories.filter(function(story) {
 				return story.story_type != 'release' && states.indexOf(story.current_state) > -1;
 			});
+			stories.forEach(function(story) {
+				if (story.estimate > 8) {
+					story.estimate_range = 'large'
+				} else if (story.estimate > 3) {
+					story.estimate_range = 'medium'
+				} else if (story.estimate >= 0) {
+					story.estimate_range = 'small'
+				} else {
+					story.estimate_range = 'none'
+				}
+			});
 			return stories;
 		};
 

@@ -16,13 +16,13 @@ body {
 }
 
 .story {
-	color: #333;
+	color: #000;
 	position: relative;
 	margin: 0 auto;
 	padding: 10px;
 	font-size: 10px;
 	box-shadow: 0 10px 1;
-	background: #eae672;
+	background: #FFEB3B;
 	-webkit-transform: rotate(2deg);
 	-moz-transform: rotate(2deg);
 	-o-transform: rotate(2deg);
@@ -48,4 +48,20 @@ body {
 	position: absolute;
 	bottom: 10px; right: 10px;
 	font-weight: bold;
+}
+
+.estimate-small {
+	background: #4CAF50; /* 1, 2, 3 */
+	color: #FFF;
+}
+.estimate-medium {
+	background: #03A9F4; /* 5, 8 */
+}
+.estimate-large {
+	background: #673AB7; /* 13, 21 */
+	color: #FFF;
+}
+.bug {
+	background: #F44336;
+	color: #FFF;
 }
